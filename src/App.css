@@ -40,92 +40,36 @@
 button {
   font-size: calc(10px + 2vmin);
 }
-.body{
-  margin-left: 295px;
-}
-.corpo{
-  background-color: #fff;
-  padding: 0px;
+
+.Icones{
   display: flex;
-  width: 1000px;
-  font-family: verdana;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
 }
-.caixa{
-  background-color:  #f5f5f5 ;
-  border:1px solid rgb(226, 224, 224);
-  border-radius: 3px;
-  flex-grow: 1;
-  width: max-content;
+.apps{
+  align-items: center;
+  background-color: #fff;
+  border:0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 4px;
+  width: 125px;
 }
-.large_caixa{
-  background-color:  #f5f5f5 ;
-  border:1px solid rgb(226, 224, 224);
-  border-radius: 3px;
-  margin: 10px;
-  padding: 15px;
-  width: max-content;
+.apps:hover{
+  background-color: #e4e4e4;
+  text-decoration:dotted;
 }
-.caixa1{
-  background-color: #5bc0de;
-  width: 430px;
-  color: #fff;
-  border-radius: 3px;
-  text-align: center;
-  padding: 5px;
-  padding-top: 3px; 
+img{
+  margin-top: 20px;
+  border: 1px solid rgba(226, 224, 224, 0);
+  border-radius: 30px;
+  width:30px;
 }
-.caixa1:hover{
-  background-color: #31b0d5;
-  text-decoration:underline;
-}
-.descricao{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 10px;
-  font-family: Verdana;
 
-}
-.caixa2{
-  background-color:  #337ab7;
-  width: 940px;
-  color: #fff;
-  border-radius: 3px;
-  text-align: center;
-  padding: 5px;
-  padding-top: 3px;
-}
-.caixa2:hover{
-  background-color: #286090;
-  text-decoration:underline;
-}
-.caixa3{
-  background-color:   #5cb85c ;
-
-  width: 430px;
-  color: #fff;
-  border-radius: 3px;
-  text-align: center;
-  padding: 5px;
-  padding-top: 3px;
-}
-.caixa3:hover{
-  background-color: #449d44;
-  text-decoration:underline;
-}
-.valor{
-  padding: 2px;
-  font-size: small;
-}
-.caixa4{
-  background-color:   #d9534f ;
-  width: 267px;
-  color: #fff;
-  border-radius: 3px;
-  text-align: center;
-  padding: 5px;
-  padding-top: 3px;
-}
-.caixa4:hover{
-  background-color: #c9302c;
-  text-decoration:underline;
+.nome{
+  font-size: 15px;
 }
