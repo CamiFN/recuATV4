@@ -1,6 +1,7 @@
 //App.jsx
 import { useState } from 'react';
 import './App.css'
+import Button from "./Button";
 
 function App(){
   const [selecionado, setSelecionado] = useState(false);
@@ -10,43 +11,43 @@ function App(){
       console.log(selecionado);
   }
 
+  const icones = [
+    {
+      link: "Ifro.png",
+      nome: "AVA",
+    },
+    {
+      link: "brainly.png",
+      nome: "brainly",
+    },
+    {
+      link: "youtube.jpg",
+      nome: "YouTube",
+    },
+    {
+      link: "pinterest.png",
+      nome: "Pinterest",
+    },
+    {
+      link: "muitomanga.png",
+      nome: "MuitoManga",
+    },
+    {
+      link: "Wattpad.png",
+      nome: "Wattpad",
+    },
+    {
+      link: "mais.png",
+      nome: "Adicionar ata...",
+    },
+
+  ]
+
   return(
       <div className="Icones">
-          
-          <button className='apps'>
-              <img src="Ifro.png" alt="ERRO" />
-              <p className='nome'>AVA</p>
-          </button>
-
-          <button className='apps'>
-              <img src="brainly.png" alt="ERRO" />
-              <p className='nome'>Brainly</p>
-          </button> 
-
-          <button className='apps'>
-              <img src="youtube.jpg" alt="ERRO" />
-              <p className='nome'>YouTube</p>
-          </button> 
-
-          <button className='apps'>
-              <img src="pinterest.png" alt="ERRO" />
-              <p className='nome'>Pinterest</p>
-          </button> 
-
-          <button className='apps'>
-              <img src="muitomanga.png" alt="ERRO" />
-              <p className='nome'>MuitoMangá</p>
-          </button> 
-
-          <button className='apps'>
-              <img src="Wattpad.png" alt="ERRO" />
-              <p className='nome'>Wattpad</p>
-          </button> 
-
-          <button className='apps'>
-              <img src="mais.png" alt="ERRO" />
-              <p className='nome'>Adicionar ata...</p>
-          </button>
+        {icones.map((icone) => {
+          return <Button link={icone.link} nome={icone.nome} />
+        })}
       </div>
   );
 }
